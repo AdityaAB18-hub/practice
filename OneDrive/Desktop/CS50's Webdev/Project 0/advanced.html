@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Advanced Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    h2 {
+      color: #1a73e8;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .submit-btn {
+      background-color: #1a73e8;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #1669c1;
+    }
+
+    .back-link {
+      display: block;
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #1a0dab;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Advanced Search</h2>
+
+  <form action="https://www.google.com/search" method="GET">
+    <div class="form-group">
+      <label for="as_q">All these words:</label>
+      <input type="text" name="as_q" id="as_q">
+    </div>
+
+    <div class="form-group">
+      <label for="as_epq">This exact word or phrase:</label>
+      <input type="text" name="as_epq" id="as_epq">
+    </div>
+
+    <div class="form-group">
+      <label for="as_oq">Any of these words:</label>
+      <input type="text" name="as_oq" id="as_oq">
+    </div>
+
+    <div class="form-group">
+      <label for="as_eq">None of these words:</label>
+      <input type="text" name="as_eq" id="as_eq">
+    </div>
+
+    <input class="submit-btn" type="submit" value="Advanced Search">
+  </form>
+
+  <div class="back-link">
+    <a href="index.html">Back to Main Search</a>
+  </div>
+
+</body>
+</html>
